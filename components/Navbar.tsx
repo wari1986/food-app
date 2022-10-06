@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className="h-6 bg-[#52E5A8]"></div>
       <div className="flex justify-around items-center text-2xl py-2">
         <div className="w-2/5">
-          <Image src={Logo} alt="drinkup logo" layout="responsive" />
+          <Image src={Logo} height={110} alt="drinkup logo" layout="responsive" />
         </div>
         <div className="">
           <BsBuilding />
