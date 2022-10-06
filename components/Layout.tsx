@@ -5,10 +5,10 @@ import React from "react";
 
 const Layout = ({ children }: { children: React.ReactNode}) => {
   return (
-    <div className="px-4">
+    <div className="">
       <Head>
         <title>Food ordering app</title>
-        <meta name="description" content="Crypto token tracker" />
+        <meta name="description" content="Food ordering app" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header className=''>
