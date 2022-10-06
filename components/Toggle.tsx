@@ -10,13 +10,13 @@ const Toggle = () => {
   return (
     <div>
       <div className="">
-        {/* Toogle button */}
         <div
           onClick={handleClick}
           className=""
         >
           {!nav ? <FaBars /> : <FaTimes />}
         </div>
+        {/* Toogle button */}
 
         {/* <div className="invisible space-y-0 md:my-12 lg:text-sm lg:space-y-4 lg:my-12 text-[#666666] md:visible lg:visible text-right">
           <p className="active:text-[#333333] text-bold">

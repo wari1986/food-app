@@ -3,9 +3,11 @@ import Layout from '../components/Layout';
 
 const Home: NextPage = () => {
   return (
-    <Layout>
-      <h1>Home</h1>
-    </Layout>
+    <div className="flex flex-col items-center justify-center min-h-screen">
+      <Layout >
+        HeroBanner   
+      </Layout>
+    </div>
   );
 }
 
