@@ -5,7 +5,7 @@ import { HiQrcode } from "react-icons/hi";
 
 const Footer = () => {
   return (
-    <div className="">
+    <div className="bg-white">
       <div className="flex justify-around text-5xl">
         <FaCcVisa />
         <FaCcMastercard />

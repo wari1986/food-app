@@ -5,7 +5,7 @@ import React from "react";
 
 const Layout = ({ children }: { children: React.ReactNode}) => {
   return (
-    <div className="">
+    <div className="bg-gray-100">
       <Head>
         <title>Food ordering app</title>
         <meta name="description" content="Food ordering app" />
