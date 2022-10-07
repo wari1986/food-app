@@ -1,6 +1,5 @@
 import React from 'react';
 import { Slide } from "react-slideshow-image";
-import HeroImage from "../public/assets/hero-banner/drinkUpBanner1.webp";
 import "react-slideshow-image/dist/styles.css";
 
 const slideImages = [
@@ -15,11 +14,10 @@ const slideImages = [
 export const Slider = () => {
   return (
     <div className="slide-container ">
-      <Slide>
+      <Slide arrows={false}>
         {slideImages.map((slideImage, index) => (
           <div className="each-slide" key={index}>
             <div className='' style={{ backgroundImage: `url(${slideImage.url})`, backgroundSize: 'cover', height: 400}}>
-
             </div>
           </div>
         ))}
