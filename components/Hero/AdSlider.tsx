@@ -20,14 +20,6 @@ const slideImages = [
     subtitle: "Electric vans, and bikes, no emissions",
   },
 ];
-const properties = {
-  duration: 5000,
-  autoplay: false,
-  transitionDuration: 500,
-  arrows: false,
-  infinite: true,
-  easing: "ease",
-};
 
 export const AdSlider = () => {
 
