@@ -3,9 +3,9 @@ import TypeOfBeverageCard from "./TypeOfBeverageCard";
 
 const CatalogSection = () => {
   return (
-    <div className="bg-white">
-      <h1>Our Catalog</h1>
-      <p>
+    <div className="bg-white pb-4">
+      <h1 className='text-3xl text-center'>Our Catalog</h1>
+      <p className='text-center px-4 py-6'>
         Bottoms up! We’ve got a fantastic range of drinks for you to choose from
         – take a look!
       </p>

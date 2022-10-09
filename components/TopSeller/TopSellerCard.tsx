@@ -1,37 +1,33 @@
-import React from 'react';
-import Image from 'next/image';
-import LoozaMix from '../../public/assets/best-sellers/looza-mix.webp';
+import React from "react";
 import { FaShoppingCart } from "react-icons/fa";
 
 interface Props {
-  src: string,
-  alt: string,
-  name: string,
-  price: string,
-  slug: string,
+  src: string;
+  alt: string;
+  name: string;
+  price: string;
+  slug: string;
+  topBandColor: string;
+  priceColor: string;
 }
 
-const TopSellerCard: React.FC<Props> = ({
-  src,
-  alt,
-  name,
-  price,
-  slug
-}) => {
+const TopSellerCard: React.FC<Props> = ({ src, alt, name, price, slug, topBandColor, priceColor }) => {
   return (
     <div className="card flex justify-center px-6">
       <div className="card-section w-3/4  rounded-xl py-2 shadow-md">
-        <section className="bg-yellow-500 h-2 w-full rounded-t-xl"></section>
+        <section className={`${topBandColor} h-2 w-full rounded-t-xl`}></section>
         <div className="image-section mx-auto bg-gray-100 px-6 py-2">
           <img src={src} alt={alt} />
         </div>
         <div className="name-section">
-          <h1 className="text-xl font-bold pt-8 pr-32 pl-4 pb-2 mb-8">
-            {name}
-          </h1>
+          <div className="">
+            <h1 className="mx-auto text-xl font-bold pt-8 px-4 pb-4 mb-8">
+              {name}
+            </h1>
+          </div>
         </div>
         <div className="price-section flex justify-between px-4">
-          <h1 className="text-xl font-bold">{price} $us</h1>
+          <h1 className={`text-2xl ${priceColor} font-bold`}>$us{price}</h1>
           <button className="text-2xl">
             <FaShoppingCart />
           </button>
@@ -39,6 +35,6 @@ const TopSellerCard: React.FC<Props> = ({
       </div>
     </div>
   );
-}
+};
 
-export default TopSellerCard
+export default TopSellerCard;
