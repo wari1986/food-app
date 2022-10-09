@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import CatalogSection from '../components/Catalog/CatalogSection';
 import HeroAd from '../components/Hero/HeroAd';
 import HeroBanner from '../components/Hero/HeroBanner';
 import Layout from '../components/Layout/Layout';
@@ -10,6 +11,7 @@ const Home: NextPage = () => {
       <HeroBanner />
       <HeroAd />
       <TopSellerSection/>
+      <CatalogSection />
     </Layout>
   );
 }
