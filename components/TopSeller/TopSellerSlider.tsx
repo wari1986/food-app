@@ -10,6 +10,7 @@ const slideImages = [
     name: "Looza Mix",
     price: "16.99",
     topBandColor: "bg-yellow-400",
+    priceColor: "text-yellow-400",
   },
   {
     src: "https://andy.be/_next/image?url=https%3A%2F%2Fbru.andy.be%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2F220ded411292c711e28149c6439a6500%2Fj%2Fu%2Fjupiler633d76559ef1d.png&w=640&q=75",
@@ -17,6 +18,7 @@ const slideImages = [
     name: "Jupiler",
     price: "14.59",
     topBandColor: "bg-red-400",
+    priceColor: "text-red-400",
   },
 ];
 
@@ -33,6 +35,7 @@ export const Slider = () => {
             key={index}
             slug={slideImage.name}
             topBandColor={slideImage.topBandColor}
+            priceColor={slideImage.priceColor}
           />
         ))}
       </Slide>

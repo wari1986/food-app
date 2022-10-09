@@ -8,9 +8,10 @@ interface Props {
   price: string;
   slug: string;
   topBandColor: string;
+  priceColor: string;
 }
 
-const TopSellerCard: React.FC<Props> = ({ src, alt, name, price, slug, topBandColor }) => {
+const TopSellerCard: React.FC<Props> = ({ src, alt, name, price, slug, topBandColor, priceColor }) => {
   return (
     <div className="card flex justify-center px-6">
       <div className="card-section w-3/4  rounded-xl py-2 shadow-md">
@@ -26,7 +27,7 @@ const TopSellerCard: React.FC<Props> = ({ src, alt, name, price, slug, topBandCo
           </div>
         </div>
         <div className="price-section flex justify-between px-4">
-          <h1 className="text-xl font-bold">{price} $us</h1>
+          <h1 className={`text-2xl ${priceColor} font-bold`}>$us{price}</h1>
           <button className="text-2xl">
             <FaShoppingCart />
           </button>
