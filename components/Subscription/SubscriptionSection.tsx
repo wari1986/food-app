@@ -3,11 +3,11 @@ import Button from "../Button";
 
 const SubscriptionSection = () => {
   return (
-    <div className="bg-white py-8">
+    <div className="bg-white">
       <div className="bg-[#98FCD2] mx-4 rounded-lg">
         <div className="mx-12 pt-8 font-bold">
           <h1 className="text-4xl text-[#53E5A9] py-2">HEY YOU!</h1>
-          <p className="text-xl">
+          <p className="text-xl text-[#2F2F2D]">
             Yes, You! Subscribe to DrinkUp newsletter to get unmissable offers
             and promotions!
           </p>
