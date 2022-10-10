@@ -5,6 +5,7 @@ import FavoriteSection from '../components/Favorites/FavoriteSection';
 import HeroAd from '../components/Hero/HeroAd';
 import HeroBanner from '../components/Hero/HeroBanner';
 import Layout from '../components/Layout/Layout';
+import { ReasonsSection } from '../components/Reasons/ReasonsSection';
 import TopDealsSection from '../components/TopDeals/TopDealsSection';
 import TopSellerSection from '../components/TopSeller/TopSellerSection';
 
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
       <TopDealsSection />
       <BannerSection />
       <FavoriteSection />
+      <ReasonsSection />
     </Layout>
   );
 }
