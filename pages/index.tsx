@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import BannerSection from '../components/Banner/BannerSection';
 import CatalogSection from '../components/Catalog/CatalogSection';
+import FavoriteSection from '../components/Favorites/FavoriteSection';
 import HeroAd from '../components/Hero/HeroAd';
 import HeroBanner from '../components/Hero/HeroBanner';
 import Layout from '../components/Layout/Layout';
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
       <CatalogSection />
       <TopDealsSection />
       <BannerSection />
+      <FavoriteSection />
     </Layout>
   );
 }
