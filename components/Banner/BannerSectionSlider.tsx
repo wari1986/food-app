@@ -36,7 +36,7 @@ const slideImages = [
 export const Slider = () => {
   return (
     <div className="slide-container">
-      <Slide duration={4500} transitionDuration={200}>
+      <Slide arrows={false} duration={4500} transitionDuration={700}>
         {slideImages.map((slideImage, index) => (
           <BannerCard
             src={slideImage.src}
